@@ -39,5 +39,13 @@ pipeline {
                 step([$class: 'FindBugsPublisher', canComputeNew: false, defaultEncoding: '', excludePattern: '', healthy: '', includePattern: '', pattern: '**/target/findbugsXml.xml', unHealthy: ''])
             }
         }
-   }
+
+           // Make the arthifact'....
+        stage('Make Artifact') {
+            steps {
+                archiveArtifacts artifacts: '**/sampleproject.war', onlyIfSuccessful: true
+            }
+        }
+    
+    }
 }
