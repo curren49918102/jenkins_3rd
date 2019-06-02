@@ -48,7 +48,9 @@ pipeline {
         }
         
         stage('Tomcat Deploy') {
-            sh "curl -v -u admin:adminadmin -T sampleproject.war http://localhost:8088/manager/text/deploy?path=&update=true"
+            steps {
+                sh "curl -v -u admin:adminadmin -T sampleproject.war http://localhost:8088/manager/text/deploy?path=&update=true"
+            }
         }
         
     }
