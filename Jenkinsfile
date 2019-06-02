@@ -46,6 +46,10 @@ pipeline {
                 archiveArtifacts artifacts: '**/sampleproject.war', onlyIfSuccessful: true
             }
         }
-    
+        
+        stage('Tomcat Deploy') {
+            sh "curl -v -u admin:adminadmin -T sampleproject.war http://localhost:8088/manager/text/deploy?path=&update=true"
+        }
+        
     }
 }
