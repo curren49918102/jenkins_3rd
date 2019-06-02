@@ -49,7 +49,7 @@ pipeline {
         
         stage('Tomcat Deploy') {
             steps {
-                sh "curl -v -u admin:adminadmin -T sampleproject.war http://localhost:8088/manager/text/deploy?path=&update=true"
+                sh "curl -v -u admin:adminadmin -T target/*.war http://localhost:8088/manager/text/deploy?path=/sample&update=true"
             }
         }
         
