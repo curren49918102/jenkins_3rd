@@ -2,13 +2,15 @@ pipeline {
     agent any
     stages {
         // Mark the code checkout 'stage'....
+        /*
         stage('Checkout') {
             steps {
                 // Get some code from a GitHub repository
                 git url: 'https://github.com/wdpressplus/Jenkins_Practical_Guide_3rd_Edition.git'
             }
         }
-
+        */
+        
         // Mark the code build 'stage'....
         stage('Build, Unittest and Static Analysis') {
             steps {
