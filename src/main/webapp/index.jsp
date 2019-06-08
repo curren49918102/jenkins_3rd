@@ -4,15 +4,15 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-31j">
-		<title>入力画面</title>
+		<title>Entry Form</title>
 	</head>
 	<body>
 		<h1>Sample Program 0608</h1>
 		<form action="./SampleServlet" method="post">
-			<label for="LastName">名字</label>: <input type="text" name="LastName" /><br />
-			<label for="FirstName">名前</label>: <input type="text" name="FirstName" /><br />
+			<label for="LastName">First Name</label>: <input type="text" name="LastName" /><br />
+			<label for="FirstName">Last Name</label>: <input type="text" name="FirstName" /><br />
 			<input type="hidden" name="action" value="hello" />
-			<input type="submit" name="send" value="送信" />
+			<input type="submit" name="send" value="Submit" />
 		</form>
 	</body>
 </html>
