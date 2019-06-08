@@ -7,7 +7,7 @@
 		<title>入力画面</title>
 	</head>
 	<body>
-		<h1>サンプルプログラム0602</h1>
+		<h1>Sample Program 0608</h1>
 		<form action="./SampleServlet" method="post">
 			<label for="LastName">名字</label>: <input type="text" name="LastName" /><br />
 			<label for="FirstName">名前</label>: <input type="text" name="FirstName" /><br />
