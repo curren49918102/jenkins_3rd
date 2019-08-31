@@ -42,6 +42,21 @@ pipeline {
             }
         }
 
+        // SonarQube 'stage'....
+        stage('SonarQube') {
+            steps {
+                script {
+                    // Global Tool Configuration で Maven 3.5.0 を設定していること。
+                    def mvnHome = tool 'Maven 3.5.0'
+                    if (env.OS == 'Windows_NT') {
+                        bat "${mvnHome}/bin/mvn sonar:sonar"
+                    } else {
+                        sh "${mvnHome}/bin/mvn sonar:sonar"
+                    }
+                }
+            }
+        }
+        
            // Make the arthifact'....
         stage('Make Artifact') {
             steps {
