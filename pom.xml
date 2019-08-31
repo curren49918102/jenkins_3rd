@@ -77,7 +77,7 @@
     <!-- 【例】 プロジェクト名設定`{分類名}/${project.artifactId}`等 -->
     <sonar.projectName>sample-project</sonar.projectName>
     <!-- 【例】 SonarQube Server のURL設定 -->
-    <sonar.host.url>https://192.168.10.22</sonar.host.url>
+    <sonar.host.url>https://192.168.10.22:9000</sonar.host.url>
     <!-- SonarQube Server側の設定で`Force user authentication`をtrueにした場合は、
          sonar.login に何れかのユーザートークンを設定する必要があります。 -->
        
