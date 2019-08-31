@@ -51,7 +51,7 @@ pipeline {
         
         stage('Tomcat Deploy') {
             steps {
-                sh "curl -v -u admin:adminadmin -T target/*.war http://192.168.10.22:18080/manager/text/deploy?path=/sampleproject&update=true"
+                sh "curl -v -u tomcat:tomcat -T target/*.war http://192.168.10.22:18080/manager/text/deploy?path=/sampleproject&update=true"
                // sh "target/*.war /usr/share/tomcat/webapps"
             }
         }
