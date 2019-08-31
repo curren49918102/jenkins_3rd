@@ -7,7 +7,7 @@
 		<title>Entry Form</title>
 	</head>
 	<body>
-		<h1>Sample Program 0608</h1>
+		<h1>Sample Program 0831</h1>
 		<form action="./SampleServlet" method="post">
 			<label for="LastName">First Name</label>: <input type="text" name="LastName" /><br />
 			<label for="FirstName">Last Name</label>: <input type="text" name="FirstName" /><br />
