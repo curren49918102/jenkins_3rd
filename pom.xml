@@ -73,6 +73,7 @@
     <sonar.exclusions>
       **/sample/*,
       **/*Test.*,
+      **/*.xml,
     </sonar.exclusions>
     <!-- 【例】 プロジェクト名設定`{分類名}/${project.artifactId}`等 -->
     <sonar.projectName>sample-project</sonar.projectName>
